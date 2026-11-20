@@ -1,58 +1,47 @@
-# Master Ad Script Skills
+# Master Ad Script Writer
 
-PixelCube's skill for writing advertising scripts with Claude.
+PixelCube's Claude plugin for writing and validating advertising scripts.
 
-## What's here
+## Skills in this plugin
+
+| Skill | Use it to |
+|---|---|
+| `master-ad-script-writer` | Write any ad script: strategy, five hooks, timed director's script, clean voiceover, CTA variants, test variants. Validates its own draft before delivering. |
+| `ad-script-review` | Rate and validate any script: fourteen scored checks, a first-time viewer pass, a critic pass and a risk pass, then the top five fixes. |
+
+## What's inside
 
 ```
-master-ad-script-writer/      the skill
-  SKILL.md                    main instructions (works alone)
-  references/
-    audience-psychology.md    awareness stages, emotions, influence, objections
-    story-frameworks.md       beat maps for eleven ad formats
-    hooks.md                  triggers, tactic library, openers, visual hooks
-    offer-and-cta.md          offer anatomy, price framing, risk reversal, CTAs
-    voice-and-production.md   writing for the ear, word budgets, platforms, variants
-    examples.md               two complete worked outputs
-sources/                      upstream skills it was built from (reference only)
+.claude-plugin/plugin.json
+skills/
+  master-ad-script-writer/
+    SKILL.md
+    references/
+      audience-psychology.md  story-frameworks.md  hooks.md
+      offer-and-cta.md  voice-and-production.md  examples.md
+      library/              26 scanned source skills, opened on demand
+        INDEX.md
+  ad-script-review/
+    SKILL.md
+SOURCES.md                  where everything came from, and the scan report
 ```
 
-## What the skill does
+## Install
 
-Given a brief (product, audience, offer, platform, length), it produces:
+**Claude app:** download `master-ad-script-writer.plugin` from this repo, then add it as a plugin.
 
-1. A strategy snapshot
-2. Five hook options with a pick
-3. A timed director's script (visual, on-screen text, voiceover, sound)
-4. A clean voiceover script with word count
-5. Soft, medium and strong CTA variants
-6. Director's notes and A/B test variants
-7. A list of proof the client still needs to supply
+**Claude Code:** clone this repo and add it as a plugin, or copy the two folders under `skills/` into `~/.claude/skills/`.
 
-It works for video ads, Reels, Shorts, TikTok, YouTube, TV, radio, UGC and brand films, for business or consumer audiences.
+**Build the plugin file:**
 
-## How to use it
+```
+zip -r master-ad-script-writer.plugin .claude-plugin skills README.md SOURCES.md
+```
 
-**In Claude Code:** copy the `master-ad-script-writer` folder into `~/.claude/skills/` (or a project's `.claude/skills/`). The reference files load when the skill needs them.
+## Rules the skills follow
 
-**In the Claude app:** add `master-ad-script-writer/SKILL.md` as a skill. The app version runs from the main file alone.
-
-## Rules the skill follows
-
-It will not invent statistics, testimonials, discounts or deadlines. Missing proof is flagged as `[NEED: ...]` for the client to supply.
-
-## How it was built
-
-- 50 script-related skills were selected from five public MIT-licensed repositories and scanned with NVIDIA SkillSpector. 47 passed; 3 were left out. See `sources/README.md`.
-- Lessons were distilled from five expert videos (transcripts only).
-- Everything in `master-ad-script-writer/` is re-expressed in this skill's own words.
+They will not invent statistics, testimonials, discounts or deadlines. Missing proof is flagged as `[NEED: ...]`. No script is scored 10/10 while proof is unconfirmed.
 
 ## Credits
 
-- [ai-ads-claude](https://github.com/zubair-trabzada/ai-ads-claude) by Zubair Trabzada
-- [clawfu-skills](https://github.com/guia-matthieu/clawfu-skills) by Guia
-- [claude-vibes](https://github.com/mike-coulbourn/claude-vibes) by Mike Coulbourn
-- [motion-creative/skills](https://github.com/motion-creative/skills) by Motion
-- [marketingskills](https://github.com/coreyhaines31/marketingskills) by Corey Haines
-
-Frameworks referenced: StoryBrand (Donald Miller), awareness stages (Eugene Schwartz), influence principles (Robert Cialdini), Made to Stick (Chip and Dan Heath), the value equation (Alex Hormozi). Video lessons from Fraser Cottrell, Kallaway, Youri van Hofwegen and Sabri Suby.
+Built from five MIT-licensed repositories (ai-ads-claude, clawfu-skills, claude-vibes, motion-creative/skills, marketingskills) and lessons from videos by Fraser Cottrell, Kallaway, Youri van Hofwegen and Sabri Suby. Frameworks referenced: StoryBrand, Schwartz awareness stages, Cialdini's influence principles, Made to Stick, the value equation. Full detail in `SOURCES.md`.

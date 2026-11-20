@@ -1,17 +1,19 @@
 # Sources
 
-The upstream skills the master skill was built from. These are unmodified copies, kept for reference and credit. They are not part of the master skill and are not loaded when it runs.
+The upstream skills the master skill was built from. These are unmodified copies, kept for reference and credit. The master skill opens them on demand through `references/library/INDEX.md`.
 
 Every copied skill was scanned with NVIDIA SkillSpector v2.12.0 (static mode) on 2026-11-20 and returned SAFE, 0/100 risk, no findings.
 
-## Copied here (26 skills)
+## Copied into the master skill's library (26 skills)
+
+Location: `skills/master-ad-script-writer/references/library/`. Each skill's main file is saved as `<skill>.md` and its supporting files as `<skill>--<file>.md`.
 
 | Folder | Upstream | Commit | Licence | Skills |
 |---|---|---|---|---|
-| `ai-ads-claude/` | https://github.com/zubair-trabzada/ai-ads-claude | d1df3f5 | MIT | ads-hooks, ads-copy, ads-creative, ads-video, ads-funnel, ads-landing, ads-testing, ads-audience, ads-strategy |
-| `motion-creative/` | https://github.com/motion-creative/skills | 5d03170 | MIT | hook-writing, hook-tactics, hook-voice-patterns, ad-concept-generator, ugc-scriptwriter |
-| `claude-vibes/` | https://github.com/mike-coulbourn/claude-vibes | 1f8b508 | MIT | scriptwriting-methodology, conversion-psychology, natural-writing, platform-optimization, elevator-pitch-techniques, tagline-creation-strategies, jtbd-psychographic-research |
-| `marketingskills/` | https://github.com/coreyhaines31/marketingskills | 5b2b400 | MIT | copywriting, marketing-psychology, offers, customer-research, copy-editing |
+| `library/ai-ads-claude/` | https://github.com/zubair-trabzada/ai-ads-claude | d1df3f5 | MIT | ads-hooks, ads-copy, ads-creative, ads-video, ads-funnel, ads-landing, ads-testing, ads-audience, ads-strategy |
+| `library/motion-creative/` | https://github.com/motion-creative/skills | 5d03170 | MIT | hook-writing, hook-tactics, hook-voice-patterns, ad-concept-generator, ugc-scriptwriter |
+| `library/claude-vibes/` | https://github.com/mike-coulbourn/claude-vibes | 1f8b508 | MIT | scriptwriting-methodology, conversion-psychology, natural-writing, platform-optimization, elevator-pitch-techniques, tagline-creation-strategies, jtbd-psychographic-research |
+| `library/marketingskills/` | https://github.com/coreyhaines31/marketingskills | 5b2b400 | MIT | copywriting, marketing-psychology, offers, customer-research, copy-editing |
 
 Each folder carries the upstream LICENSE file.
 

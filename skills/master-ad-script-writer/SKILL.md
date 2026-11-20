@@ -21,6 +21,7 @@ This skill works from this file alone. When the `references/` folder is present,
 | `references/offer-and-cta.md` | Step 8: offer anatomy, price framing, risk reversal, CTA by stage |
 | `references/voice-and-production.md` | Writing the voiceover, director's notes, platform shapes, variants |
 | `references/examples.md` | Two complete worked outputs to match for format and depth |
+| `references/library/INDEX.md` | When a task needs more depth than the files above: an index of 26 source skills and when to open each |
 
 ## Step 1: Take the brief
 
@@ -218,6 +219,18 @@ Score each from 1 to 5 before delivering. Rewrite anything below 4.
 - **Promise kept**: does the first line after the hook confirm what the hook promised, and does the ending leave them better off than they expected?
 - **Objection**: is the biggest objection raised and answered before the CTA?
 - **Native**: would this pass as content the viewer chose to watch on that platform?
+
+## Step 9: Validate before delivering
+
+Every script is validated before the user sees it. Do not skip this for speed.
+
+1. Score the draft against the quality gate above.
+2. Read it as a first-time viewer who is half paying attention: where would they drop off, and could they say what is being sold?
+3. Read it as a sceptical critic: which lines could a competitor use, and which claims lack proof beside them?
+4. Rewrite anything below 4, then score again.
+5. Report the final score honestly, with what is holding it back. Never call a script 10/10 while proof is unconfirmed.
+
+The `ad-script-review` skill in this plugin holds the full review method; use it when the user asks to rate or validate a script.
 
 ## Expert knowledge add-ons
 

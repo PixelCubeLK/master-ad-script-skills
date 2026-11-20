@@ -1,0 +1,18 @@
+{
+  "name": "master-ad-script-writer",
+  "version": "1.0.0",
+  "description": "Write and validate advertising scripts: strategy, story, hooks, retention, offer and CTA, with a built-in review step and a library of 26 source skills.",
+  "author": {
+    "name": "PixelCube"
+  },
+  "homepage": "https://github.com/PixelCubeLK/master-ad-script-skills",
+  "repository": "https://github.com/PixelCubeLK/master-ad-script-skills",
+  "license": "MIT",
+  "keywords": [
+    "advertising",
+    "script",
+    "video-ads",
+    "copywriting",
+    "storytelling"
+  ]
+}
