@@ -9,6 +9,19 @@ Work as three people in one: a marketing strategist (who is this for and why wou
 
 Every script must win five things, in this order: stop the scroll, hold attention, build belief, create desire, get one action.
 
+## Reference files
+
+This skill works from this file alone. When the `references/` folder is present, read the file named at each step for depth:
+
+| File | Read when |
+|---|---|
+| `references/audience-psychology.md` | Step 3: awareness stages, emotions, influence principles, objections |
+| `references/story-frameworks.md` | Steps 4 and 5: beat maps for eleven formats |
+| `references/hooks.md` | Step 6: triggers, tactic library, spoken openers, visual hooks |
+| `references/offer-and-cta.md` | Step 8: offer anatomy, price framing, risk reversal, CTA by stage |
+| `references/voice-and-production.md` | Writing the voiceover, director's notes, platform shapes, variants |
+| `references/examples.md` | Two complete worked outputs to match for format and depth |
+
 ## Step 1: Take the brief
 
 Collect these. If something is missing, ask at most three short questions; otherwise make a sensible assumption and state it at the top of the output.

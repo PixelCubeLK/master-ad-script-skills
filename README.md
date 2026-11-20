@@ -4,9 +4,18 @@ PixelCube's skill for writing advertising scripts with Claude.
 
 ## What's here
 
-| Folder | What it is |
-|---|---|
-| `master-ad-script-writer/` | A universal storytelling ad script skill: strategy, story, hook, retention, trust, offer and call to action, delivered as a director-ready script. |
+```
+master-ad-script-writer/      the skill
+  SKILL.md                    main instructions (works alone)
+  references/
+    audience-psychology.md    awareness stages, emotions, influence, objections
+    story-frameworks.md       beat maps for eleven ad formats
+    hooks.md                  triggers, tactic library, openers, visual hooks
+    offer-and-cta.md          offer anatomy, price framing, risk reversal, CTAs
+    voice-and-production.md   writing for the ear, word budgets, platforms, variants
+    examples.md               two complete worked outputs
+sources/                      upstream skills it was built from (reference only)
+```
 
 ## What the skill does
 
@@ -24,17 +33,21 @@ It works for video ads, Reels, Shorts, TikTok, YouTube, TV, radio, UGC and brand
 
 ## How to use it
 
-**In the Claude app:** add `master-ad-script-writer/SKILL.md` as a skill in your account, then ask for an ad script.
+**In Claude Code:** copy the `master-ad-script-writer` folder into `~/.claude/skills/` (or a project's `.claude/skills/`). The reference files load when the skill needs them.
 
-**In Claude Code:** copy the `master-ad-script-writer` folder into `~/.claude/skills/` (or a project's `.claude/skills/`).
+**In the Claude app:** add `master-ad-script-writer/SKILL.md` as a skill. The app version runs from the main file alone.
 
 ## Rules the skill follows
 
 It will not invent statistics, testimonials, discounts or deadlines. Missing proof is flagged as `[NEED: ...]` for the client to supply.
 
-## Credits
+## How it was built
 
-Synthesised and re-expressed from five MIT-licensed skills:
+- 50 script-related skills were selected from five public MIT-licensed repositories and scanned with NVIDIA SkillSpector. 47 passed; 3 were left out. See `sources/README.md`.
+- Lessons were distilled from five expert videos (transcripts only).
+- Everything in `master-ad-script-writer/` is re-expressed in this skill's own words.
+
+## Credits
 
 - [ai-ads-claude](https://github.com/zubair-trabzada/ai-ads-claude) by Zubair Trabzada
 - [clawfu-skills](https://github.com/guia-matthieu/clawfu-skills) by Guia
@@ -42,4 +55,4 @@ Synthesised and re-expressed from five MIT-licensed skills:
 - [motion-creative/skills](https://github.com/motion-creative/skills) by Motion
 - [marketingskills](https://github.com/coreyhaines31/marketingskills) by Corey Haines
 
-The story spine follows Donald Miller's StoryBrand framework. The expert add-ons distil lessons from videos by Fraser Cottrell, Kallaway, Youri van Hofwegen and Sabri Suby.
+Frameworks referenced: StoryBrand (Donald Miller), awareness stages (Eugene Schwartz), influence principles (Robert Cialdini), Made to Stick (Chip and Dan Heath), the value equation (Alex Hormozi). Video lessons from Fraser Cottrell, Kallaway, Youri van Hofwegen and Sabri Suby.
